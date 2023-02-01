@@ -1,0 +1,827 @@
+
+<!-- saved from url=(0077)http://ipasweb.inpi.gov.br/IpasWeb/MarkEdit/SelectTrademarkSelect.do?rowNum=1 -->
+<html lang="pt"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>
+            
+        Dados do processo
+    
+        </title>
+        <meta http-equiv="X-UA-Compatible" content="IE=100">
+        <meta http-equiv="Content-Type" content="text/html; charset:UTF-8">
+
+		       	<script type="text/javascript" src="./6 Dados do processo_files/ckeditor.js.download"></script><style>.cke{visibility:hidden;}</style>
+    <script type="text/javascript" src="./6 Dados do processo_files/prototype-1.4.0.js.download"></script>
+		<script type="text/javascript" src="./6 Dados do processo_files/scriptaculous.js.download"></script><script type="text/javascript" src="./6 Dados do processo_files/builder.js.download"></script><script type="text/javascript" src="./6 Dados do processo_files/effects.js.download"></script><script type="text/javascript" src="./6 Dados do processo_files/dragdrop.js.download"></script><script type="text/javascript" src="./6 Dados do processo_files/controls.js.download"></script><script type="text/javascript" src="./6 Dados do processo_files/slider.js.download"></script><script type="text/javascript" src="./6 Dados do processo_files/sound.js.download"></script>
+		<script type="text/javascript" src="./6 Dados do processo_files/overlibmws.js.download"></script>
+  	<script type="text/javascript" src="./6 Dados do processo_files/ajaxtags-1.2-beta1.js.download"></script>
+  		<script type="text/javascript" src="./6 Dados do processo_files/controls.js.download"></script>
+  		<link rel="stylesheet" type="text/css" href="./6 Dados do processo_files/displaytag.css">  
+    
+	    <link type="text/css" rel="StyleSheet" href="./6 Dados do processo_files/tab.webfx.css">
+		<script type="text/javascript" src="./6 Dados do processo_files/tabpane.js.download"></script>
+		<script type="text/javascript" src="./6 Dados do processo_files/hTable.js.download"></script>
+		<link type="text/css" rel="StyleSheet" href="./6 Dados do processo_files/hTable.css">
+    	<link rel="stylesheet" type="text/css" href="./6 Dados do processo_files/style.css">
+		<link rel="stylesheet" type="text/css" href="./6 Dados do processo_files/subModal.css">
+		<script type="text/javascript" src="./6 Dados do processo_files/common.js.download"></script>
+		<script type="text/javascript" src="./6 Dados do processo_files/subModal.js.download"></script>
+	
+	
+			 
+			
+			
+				<link rel="stylesheet" type="text/css" media="screen" href="./6 Dados do processo_files/default-application.css">
+				<link rel="stylesheet" type="text/css" media="screen" href="./6 Dados do processo_files/default.css">
+			
+		
+		
+        <script type="text/javascript" language="Javascript1.1" src="./6 Dados do processo_files/layout-common.js.download"></script>
+        <script type="text/javascript" language="Javascript1.1" src="./6 Dados do processo_files/key-events.js.download"></script>
+   
+		<script type="text/javascript" src="./6 Dados do processo_files/utils.js.download"></script>
+		<script type="text/javascript" src="./6 Dados do processo_files/Chart.min.js.download"></script>
+		<link rel="stylesheet" type="text/css" href="./6 Dados do processo_files/Chart.css">	
+		<link rel="stylesheet" type="text/css" href="./6 Dados do processo_files/Chart.min.css">	
+		
+        
+        <link rel="stylesheet" type="text/css" media="screen" href="./6 Dados do processo_files/view-trademark.css">
+<script>
+function submitGeneral()
+{
+}
+</script>
+    
+        
+		<script>
+		function enableAllFields(form)
+		{
+		if (form !=null )
+		{
+		var inps=form.getElementsByTagName('select');
+		for(var i=0;i<inps.length;i++)
+			{inps[i].disabled=false;}
+		}
+		}
+		</script>
+    
+  			 
+  <script>
+
+
+  	 var xmlhttp;
+  function loadXMLDoc(urlstr)
+{
+// code for Mozilla, etc.
+if (window.XMLHttpRequest)
+  {
+  xmlhttp=new XMLHttpRequest();
+  //xmlhttp.onreadystatechange=xmlhttpChange
+  xmlhttp.open("GET",urlstr,false);
+  xmlhttp.send(null);
+  }
+// code for IE
+else if (window.ActiveXObject)
+  {
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+    if (xmlhttp)
+    {
+//    xmlhttp.onreadystatechange=xmlhttpChange
+    xmlhttp.open("GET",urlstr,false);
+    xmlhttp.send();
+    }
+  }
+}
+
+window.onbeforeunload = confirmExit;
+	function confirmExit(e){
+		//alert('You must close the window using IPAS toolbar');
+		return undefined;
+	}
+
+window.onclose=removeWindow;
+function onBlur() {
+	//document.body.className = 'blurred';
+};
+function onFocus(){
+	//document.body.className = 'focused';
+	activateWindow();
+};
+
+if (/*@cc_on!@*/false) { // check for Internet Explorer
+	document.onfocusin = onFocus;
+	document.onfocusout = onBlur;
+} else {
+	window.onfocus = onFocus;
+	window.onblur = onBlur;
+}
+
+
+  function getWindowId(){
+  	if(window.name == ''){
+  		window.name='0';
+  	}
+	 return window.name;
+	}
+	
+	function activateWindow(){
+		
+	loadXMLDoc('/IpasWeb/PushSession'+'?id='+getWindowId()+'&ts='+new Date().getTime());
+  
+  }
+  
+   function activate(id){
+		
+	loadXMLDoc('/IpasWeb/PushSession'+'?id='+id+'&ts='+new Date().getTime());
+  
+  }  
+  
+	function removeWindow(){
+		
+		loadXMLDoc('/IpasWeb/PopSession'+'?id='+getWindowId()+'&ts='+new Date().getTime());
+
+	}
+  function pushSession()
+  {
+  	//flag this window as active
+  	//window.hasActiveChild=true;
+  	
+	 /*
+  	//load timestamp as windowid
+  	window.windowId=new Date().getTime();
+  	setHasActiveChild(window.windowId);
+  	//disable window
+  	window.document.getElementById('disablingDiv').style.display='block';
+  	loadXMLDoc('/IpasWeb/PushSession'+'?id='+getHasActiveChild());
+  	*/
+  }
+
+
+
+  function popSession()
+  {/**
+  	var id=window.opener.getHasActiveChild();
+  	window.opener.setHasActiveChild(0);
+  	window.opener.document.getElementById('disablingDiv').style.display='none';
+  	loadXMLDoc('/IpasWeb/PopSession'+'?id='+id);
+  	*/
+  	
+  	removeWindow();
+  }
+  
+  function sessionSaveFunc()
+  {
+  	//new Ajax.Updater('zzz','http://localhost:8090/tests/sessionsave', {method:'get', asynchronous:false});
+  	loadXMLDoc('/IpasWeb/sessionSave.do');
+
+  	
+  	//alert(xmlhttp.responsetext);
+  }
+  
+  function sessionRestoreFunc()
+  {
+  	//new Ajax.Updater('zzz','http://localhost:8090/tests/sessionrestore', {method:'get', asynchronous:false});
+    loadXMLDoc('/IpasWeb/sessionRestore.do');
+  
+ 	//  loadXMLDoc('/tests2/sessionTest.do');
+ 	//  alert(xmlhttp.responsetext);
+  }
+  gSessionSaveFunc=sessionSaveFunc;
+  gSessionRestoreFunc=sessionRestoreFunc;
+  
+  //window.urlForReturning;  	
+  var formReference=null;
+  var formPrefix=null;
+  //window.hasActiveChild=false;
+  //window.windowId=null; 
+  
+  function refreshParentWindow(){
+	if (!window.opener.closed){
+		activate(window.opener.name);
+		window.opener.refreshWindow();
+	}
+
+		//OJO ESTO NO FUNCIONA
+		//	if (window.opener.urlForReturning==null){
+		//		window.opener.location.reload(true);
+		//	} else {
+		//		window.opener.location=window.urlForReturning;
+		//	}
+  }
+	 
+  function refreshWindow(){
+  	
+  	if (window.urlForReturning==null){
+  		window.location.reload(true);
+    } else {
+  	  window.location=window.urlForReturning+'?id='+getWindowId()+'&ts='+new Date().getTime();
+    }	
+  }
+  
+	function fieldCopy()
+	{
+		if (formReference==null) return;
+		var formOrig=formReference;
+		while (formOrig.tagName != 'FORM' )
+		{
+		formOrig=formOrig.parentElement;
+		if (formOrig==null) return;
+		}
+
+		var arrayOrig=Form.getElements(formOrig);		
+		var orig=null;
+		for (var j=0; j<arrayOrig.length;j++)
+		{
+		var xx=arrayOrig[j];
+		if (xx.name != '' )
+		{
+		var i=document.getElementsByName(xx.name);
+		if (i.length >0) {
+			for (var k=0; k<i.length;k++)
+			{
+			var dest=i[k];
+			if (dest.id.indexOf(formPrefix)>=0 )
+				dest.value=xx.value;
+				dest.checked=xx.checked;
+			}
+			
+			
+			}
+		}
+		}
+	
+	}
+  
+	</script>
+    </head>
+
+    <body onload="history.forward()" dir="">
+        <div id="container">
+            <div id="content">
+            	  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+.styleBanner {
+	font-size: 18px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #CCCCCC;
+	padding:5px;
+	filter:	progid:DXImageTransform.Microsoft.Shadow(color="#777777", Direction=135, Strength=4) alpha(Opacity=90);
+}
+</style>
+<!--
+<DIV id=banner style="height:45;background-image:url('');background-repeat-x">
+<DIV style="margin:6px;">
+  <p align="left"><span class="styleBanner">IPAS</span></p>
+</DIV>
+</DIV>
+-->
+            	  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+<script>
+
+</script>
+<div style="background-image:url(&#39;/IpasWeb/ExternalResource/IpasWebBanner.jpg&#39;);height:40px">
+<table width="100%"><tbody><tr><td style="padding-top:11px">
+
+
+
+<p style="text-align:right">
+
+
+<span style="color:#eeeeee;font-size:10px;padding-top:10px "> : NICOL</span></p></td></tr></tbody></table>
+</div>
+<!--<div style= "background-image:url('/IpasWeb/ExternalResource/ipasLogoBG.PNG');background-repeat:repeat-x">
+<img src="/IpasWeb/ExternalResource/ipasLogo.PNG" align="middle" style="azimuth:front">
+</div>-->
+<!--
+    
+ 	 <p style="text-align:right">
+     <i><span style="text-align: right;FONT-SIZE: small; FONT-FAMILY: 'Times New Roman'; COLOR: #000040;">Connected User: NICOL</span></i>
+     </p>
+    -->
+    
+            	  <div class="toolbardiv">
+	    
+	    					<table width="100%">
+       					<tbody><tr><td width="90%">     	   
+            	   
+<!--pvm.rtb-->  <!-- First  2 -->
+ <!-- Prev  3 -->
+ <!-- Next  4 -->
+ <!-- Last  5 -->
+ <!-- Select  9 -->
+ <!-- Workflow  7 -->
+ <!-- Back  1 -->
+ <!-- Duplicate  14 -->
+ <!-- Changes log  15 -->
+ <!-- New mark  14 -->
+ <!-- Validate  16 -->
+ <!-- Similarities  9 -->
+ <!-- Close  1 -->
+ <!-- Madrid  16 -->
+ <!-- Folder PDF  17 -->
+ <!-- View POA  50 -->
+ <!-- View Assignments  51 -->
+ <!-- Edit  6 -->
+ <!-- Similar Owner  51 -->
+
+                                                                                   
+
+
+<div>
+<!--pvm.rh-->
+
+
+  
+
+
+        	       				<a href="http://ipasweb.inpi.gov.br/IpasWeb/MarkEdit/ViewTrademarkBack.do" style="color:#333333" class="toolbar1" onclick="if(this.innerHTML==&#39;Processando...&#39;){return false;} ;this.innerHTML=&#39;Processando...&#39;;this.style.color=&#39;gray&#39;;return true;" onmouseover="this.className=&#39;toolbar1Over&#39;;this.style.cursor=&#39;pointer&#39;;return true;" onmouseout="this.className=&#39;toolbar1&#39;;this.style.cursor=&#39;&#39;;return true;">Voltar</a>
+
+
+
+</div>
+
+
+                     
+                         
+
+
+<div>
+<!--pvm.rh-->
+
+
+   
+        	       				<a href="http://ipasweb.inpi.gov.br/IpasWeb/MarkEdit/ViewTrademarkFirst.do" style="color:#333333" class="toolbar1" onmouseover="this.className=&#39;toolbar1Over&#39;;this.style.cursor=&#39;pointer&#39;;return true;" onmouseout="this.className=&#39;toolbar1&#39;;this.style.cursor=&#39;&#39;;return true;"><img src="./6 Dados do processo_files/first.png" height="15" style="display:inline" align="absmiddle" title="Início"></a>
+
+
+
+
+</div>
+
+
+                                                                
+
+
+<div>
+<!--pvm.rh-->
+
+
+   
+        	       				<a href="http://ipasweb.inpi.gov.br/IpasWeb/MarkEdit/ViewTrademarkPrev.do" style="color:#333333" class="toolbar1" onmouseover="this.className=&#39;toolbar1Over&#39;;this.style.cursor=&#39;pointer&#39;;return true;" onmouseout="this.className=&#39;toolbar1&#39;;this.style.cursor=&#39;&#39;;return true;"><img src="./6 Dados do processo_files/previous.png" height="15" style="display:inline" align="absmiddle" title="Anterior"></a>
+
+
+
+
+</div>
+
+
+                                                                
+
+
+<div>
+<!--pvm.rh-->
+
+
+   
+        	       				<a href="http://ipasweb.inpi.gov.br/IpasWeb/MarkEdit/ViewTrademarkNext.do" style="color:#333333" class="toolbar1" onmouseover="this.className=&#39;toolbar1Over&#39;;this.style.cursor=&#39;pointer&#39;;return true;" onmouseout="this.className=&#39;toolbar1&#39;;this.style.cursor=&#39;&#39;;return true;"><img src="./6 Dados do processo_files/next.png" height="15" style="display:inline" align="absmiddle" title="Próximo"></a>
+
+
+
+
+</div>
+
+
+                                                                
+
+
+<div>
+<!--pvm.rh-->
+
+
+   
+        	       				<a href="http://ipasweb.inpi.gov.br/IpasWeb/MarkEdit/ViewTrademarkLast.do" style="color:#333333" class="toolbar1" onmouseover="this.className=&#39;toolbar1Over&#39;;this.style.cursor=&#39;pointer&#39;;return true;" onmouseout="this.className=&#39;toolbar1&#39;;this.style.cursor=&#39;&#39;;return true;"><img src="./6 Dados do processo_files/last.png" height="15" style="display:inline" align="absmiddle" title="Último"></a>
+
+
+
+
+</div>
+
+
+                                                                                                       
+
+
+<div>
+<!--pvm.rh-->
+
+
+  
+
+
+        	       				<a href="http://ipasweb.inpi.gov.br/IpasWeb/MarkEdit/ViewTrademarkEdit.do" style="color:#333333" class="toolbar1" onclick="if(this.innerHTML==&#39;Processando...&#39;){return false;} ;this.innerHTML=&#39;Processando...&#39;;this.style.color=&#39;gray&#39;;return true;" onmouseover="this.className=&#39;toolbar1Over&#39;;this.style.cursor=&#39;pointer&#39;;return true;" onmouseout="this.className=&#39;toolbar1&#39;;this.style.cursor=&#39;&#39;;return true;">Editar</a>
+
+
+
+</div>
+
+
+                        
+
+
+<div>
+<!--pvm.rh--><!--pvm.rh.nw-->        	           <span style="color:#333333" class="toolbar1" onclick="pushSession();;var winId=&#39;&#39;+new Date().getTime();openWindow(&#39;/IpasWeb/ProcessEdit/ProcessEdit.do?layout=simple&amp;processIdAsString=MAR|20143348&amp;newWindowId=&#39;+winId+&#39;&amp;parentWindowId=&#39;+window.name,winId,true,false,950,600);" onmouseover="this.className=&#39;toolbar1Over&#39;;this.style.cursor=&#39;pointer&#39;;return true;" onmouseout="this.className=&#39;toolbar1&#39;;this.style.cursor=&#39;&#39;;return true;">
+        	                   Fluxo de trabalho
+        	           </span>
+</div>
+
+
+                                                                                                                    
+                        
+
+
+<div>
+<!--pvm.rh--><!--pvm.rh.nw-->        	           <span style="color:#333333" class="toolbar1" onclick="pushSession();;var winId=&#39;&#39;+new Date().getTime();openWindow(&#39;/IpasWeb/ListMarkSimilaritiesEdit/ListMarkSimilaritiesEdit.do?layout=simple&amp;&amp;newWindowId=&#39;+winId+&#39;&amp;parentWindowId=&#39;+window.name,winId,true,false,950,600);" onmouseover="this.className=&#39;toolbar1Over&#39;;this.style.cursor=&#39;pointer&#39;;return true;" onmouseout="this.className=&#39;toolbar1&#39;;this.style.cursor=&#39;&#39;;return true;">
+        	                   Anterioridades
+        	           </span>
+</div>
+
+
+                                                                                                                                                                                                                                                                                         
+         
+                                                          
+
+
+<div>
+<!--pvm.rh-->
+
+
+  
+
+
+        	       				<a href="http://ipasweb.inpi.gov.br/IpasWeb/MarkEdit/ViewTrademarkChangesLog.do" style="color:#333333" class="toolbar1" onclick="if(this.innerHTML==&#39;Processando...&#39;){return false;} ;this.innerHTML=&#39;Processando...&#39;;this.style.color=&#39;gray&#39;;return true;" onmouseover="this.className=&#39;toolbar1Over&#39;;this.style.cursor=&#39;pointer&#39;;return true;" onmouseout="this.className=&#39;toolbar1&#39;;this.style.cursor=&#39;&#39;;return true;">Histórico de alterações</a>
+
+
+
+</div>
+
+
+                                                                   
+            
+                                                                 
+
+
+<div>
+<!--pvm.rh--><!--pvm.rh.nw-->        	           <span style="color:#333333" class="toolbar1" onclick=";var winId=&#39;&#39;+new Date().getTime();openWindow(&#39;/IpasWeb/Redirect/Redirect.do?layout=simple&amp;&amp;newWindowId=&#39;+winId+&#39;&amp;parentWindowId=&#39;+window.name,winId,true,false,950,600);" onmouseover="this.className=&#39;toolbar1Over&#39;;this.style.cursor=&#39;pointer&#39;;return true;" onmouseout="this.className=&#39;toolbar1&#39;;this.style.cursor=&#39;&#39;;return true;">
+        	                   PDF do processo
+        	           </span>
+</div>
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+
+
+<div>
+<!--pvm.rh--><!--pvm.rh.nw-->        	           <span style="color:#333333" class="toolbar1" onclick="pushSession();;var winId=&#39;&#39;+new Date().getTime();openWindow(&#39;/IpasWeb/UserdocEdit/UserdocEdit.do?layout=simple&amp;&amp;newWindowId=&#39;+winId+&#39;&amp;parentWindowId=&#39;+window.name,winId,true,false,950,600);" onmouseover="this.className=&#39;toolbar1Over&#39;;this.style.cursor=&#39;pointer&#39;;return true;" onmouseout="this.className=&#39;toolbar1&#39;;this.style.cursor=&#39;&#39;;return true;">
+        	                   View POA
+        	           </span>
+</div>
+
+
+                                                               
+
+
+<div>
+<!--pvm.rh--><!--pvm.rh.nw-->        	           <span style="color:#333333" class="toolbar1" onclick="pushSession();;var winId=&#39;&#39;+new Date().getTime();openWindow(&#39;/IpasWeb/AssignmentView/AssignmentView.do?layout=simple&amp;&amp;newWindowId=&#39;+winId+&#39;&amp;parentWindowId=&#39;+window.name,winId,true,false,950,600);" onmouseover="this.className=&#39;toolbar1Over&#39;;this.style.cursor=&#39;pointer&#39;;return true;" onmouseout="this.className=&#39;toolbar1&#39;;this.style.cursor=&#39;&#39;;return true;">
+        	                   View Assignments
+        	           </span>
+</div>
+
+
+        
+
+
+<div>
+<!--pvm.rh--><!--pvm.rh.nw-->        	           <span style="color:#333333" class="toolbar1" onclick="pushSession();;var winId=&#39;&#39;+new Date().getTime();openWindow(&#39;/IpasWeb/MarkEdit/MarkEdit.do?layout=simple&amp;viewMode=3&amp;fileIdString=MA|M|1|923165584&amp;newWindowId=&#39;+winId+&#39;&amp;parentWindowId=&#39;+window.name,winId,true,false,950,600);" onmouseover="this.className=&#39;toolbar1Over&#39;;this.style.cursor=&#39;pointer&#39;;return true;" onmouseout="this.className=&#39;toolbar1&#39;;this.style.cursor=&#39;&#39;;return true;">
+        	                   Similar Owner
+        	           </span>
+</div>
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                		<p></p>
+ 
+      					</td>
+		  					<td width="10%"> 
+    		
+    		<a class="toolbar1" href="javascript:openWindow(&#39;/IpasWeb/Home/Home.do&#39;,&#39;0&#39;,null, null, null, null, true);" onmouseout="this.className=&#39;toolbar1&#39;;this.style.cursor=&#39;&#39;;return true;" onmouseover="this.className=&#39;toolbar1Over&#39;;this.style.cursor=&#39;hand&#39;;return true;" style="color:#333333">Início</a>
+		    
+    		    <a class="toolbar1" href="http://ipasweb.inpi.gov.br/IpasWeb/Login/Login.do?mode=logout" onmouseout="this.className=&#39;toolbar1&#39;;this.style.cursor=&#39;&#39;;return true;" onmouseover="this.className=&#39;toolbar1Over&#39;;this.style.cursor=&#39;hand&#39;;return true;" style="color:#333333">Sair</a>	
+		  				</td>
+		  				</tr></tbody></table>
+		  
+		  
+		  
+		  </div>
+            	  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+.hide {
+	DISPLAY: none
+}
+</style>
+
+
+<div id="messages">
+    
+    
+    
+    
+</div>
+
+                  
+        <div>
+            <h1>Dados do processo</h1>
+        </div><p>
+<!--pvm.rs--></p><div class="status">Registro 1/1</div>
+<!--pvm.ptb--><!--*First:-->
+<!--*Prev:-->
+<!--*Next:-->
+<!--*Last:-->
+<!--*Select:-->
+<!--*Workflow:-->
+<!--*Back:-->
+<!--*Duplicate:-->
+<!--*Changes log:-->
+<!--*New mark:-->
+<!--*Validate:-->
+<!--*Similarities:-->
+<!--*Close:-->
+<!--*Madrid:-->
+<!--*Folder PDF:-->
+<!--*View POA:-->
+<!--*View Assignments:-->
+<!--*Edit:-->
+<!--*Similar Owner:-->
+        <style>
+@import "/IpasWeb/layout/TreeTable/css/nav.css";
+table.edit  {
+text-align:left;
+}
+table.edit  td {
+border-bottom:1px solid #eee
+}
+table.edit  td {
+border-bottom:1px  solid #eee
+}
+
+table.edit  th {
+border-bottom:1px  solid #eee
+}
+</style>
+
+<div id="pageVariables">
+<table width="95%" class="edit">
+  <tbody>
+
+  <tr>
+    <td width="20%">Número do processo</td>
+    <td width="80%">923165584</td>
+  </tr>
+
+  
+  
+  <tr>
+    <td>Situação</td>
+    <td>Aguardando apresentação ou exame de recurso contra o indeferimento  [due date 11/06/2022]</td>
+  </tr>
+
+  
+    <tr>
+      <td>Último evento</td>
+      <td>Indeferimento do pedido</td>
+    </tr>
+  
+  
+    <tr>
+      <td>Data RPI último evento</td>
+      <td>12/04/2022 00:00:00</td>
+    </tr>
+  
+
+  
+    <tr>
+      <td>Publicação</td>
+      <td>22/06/2021 RPI: 2633</td>
+    </tr>
+  
+
+  <tr>
+    <td>Tipo do pedido</td>
+    <td>Marca de Produto/Serviço</td>
+  </tr>
+
+  
+
+  <tr>
+    <td>Apresentação</td>
+    <td>Nominativa</td>
+  </tr>
+
+  <tr>
+    <td>Elemento nominativo</td>
+    <td>
+		ODIN
+		
+	</td>
+  </tr>
+
+      
+ 
+  
+
+  
+
+  
+
+  
+
+  <tr>
+    <td>Classe(s) de Nice</td>
+    <td>
+      
+<table id="niceClassId" style="width:700px" class="simple">
+<thead>
+<tr>
+<th>Version</th>
+<th>Classe</th>
+<th>Situação</th>
+<th>Descrição</th></tr></thead>
+<tbody>
+<tr class="odd">
+<td>
+		 
+		11-0
+		</td>
+<td>42</td>
+<td>Deferida</td>
+<td>		
+			Assessoria, consultoria e informação no campo da segurança da informática [programação].
+										  			 
+		</td></tr></tbody></table>
+    </td>
+  </tr>
+  
+  
+
+  
+
+  <tr>
+    <td>Titular(es)</td>
+    <td>
+      
+<table id="markOwnerId" style="width:700px" class="simple">
+<thead>
+<tr>
+<th>Order Nbr</th>
+<th>Nome</th>
+<th>CPF/CNPJ</th>
+<th>Rua</th>
+<th>Cidade</th>
+<th>Estado</th>
+<th>CEP</th>
+<th>País</th>
+<th>Notas</th></tr></thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>
+			DIAZERO CONSULTORIA EM SEGURANÇA ON LINE LTDA -ME
+										  			 		
+		</td>
+<td>  CNPJ 24049760000151 </td>
+<td>
+			av paulista, 726, 13 andar conjunto 1303 cx postal 716
+										  			 		
+		</td>
+<td>São Paulo</td>
+<td>SÃO PAULO</td>
+<td>01310910 </td>
+<td>BR</td>
+<td></td></tr></tbody></table>
+    </td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td>03/06/2021 11:23:17</td>
+  </tr>
+
+  <tr>
+    <td>Data de depósito</td>
+    <td>03/06/2021 11:23:17</td>
+  </tr>
+
+  
+
+  
+
+  
+
+  
+  
+  
+
+</tbody>
+</table>
+
+</div>
+
+
+<!--pvm.pte-->        <div id="pageHelpSection">
+            <blockquote>
+								<br>
+
+
+                <span onclick="openWindow(&#39;/IpasWeb/ViewTrademarkHelp.do&#39;,&#39;onlinehelp&#39;,true,false,760,540); return false;" style="color:blue" onmouseover="this.style.cursor=&#39;hand&#39;;return true;" onmouseout="this.style.cursor=&#39;&#39;;return true;">
+                    Ajuda
+                </span>
+                <img src="./6 Dados do processo_files/help.gif" style="display:inline;">
+                <span onclick="pushSession();openWindow(&#39;/IpasWeb/ConfigPage/ConfigPage.do?page=mark.edit.view.trademark.title&#39;,&#39;ConfigPage&#39;,true,false,760,540); return false;" style="color:blue" onmouseover="this.style.cursor=&#39;hand&#39;;return true;" onmouseout="this.style.cursor=&#39;&#39;;return true;">
+                    Configuração
+                </span>
+                <img src="./6 Dados do processo_files/config.gif" style="display:inline;">
+                
+                   
+								
+            </blockquote>
+        </div>
+
+    
+                       
+            </div>
+
+
+        </div>
+        <div id="popupMask">&nbsp;</div>
+
+<div id="popupContainer">
+	<div id="popupInner">
+		<div id="popupTitleBar">
+			<div id="popupTitle"></div>
+			
+		</div>
+		<iframe src="./6 Dados do processo_files/loading.html" style="width:100%;height:100%;background-color:transparent;" scrolling="auto" frameborder="0" allowtransparency="true" id="popupFrame" name="popupFrame" width="100%" height="100%"></iframe>
+	</div>
+</div>
+
+
+
+
+<footer>
+	<p>WIPO IPAS Version: 3.6.1a (20201028); DB Version: 020553</p>
+</footer>
+
+
+</body><!-- IPAS-715 --></html>
